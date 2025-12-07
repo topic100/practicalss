@@ -1,0 +1,48 @@
+✅ STEP 1: Create Your Project Folder
+
+Make a folder, for example:
+
+ts-task-manager/
+
+
+Inside it, create one file:
+
+tasks.ts
+
+
+Paste your TypeScript code inside tasks.ts.
+
+✅ STEP 2: Install TypeScript (if not installed)
+
+Open Terminal / CMD and run:
+
+npm install -g typescript
+
+
+Check version:
+
+tsc -v
+
+✅ STEP 3: Compile tasks.ts → tasks.js
+
+Open terminal inside your folder:
+
+cd path/to/ts-task-manager
+
+
+Then run:
+
+tsc tasks.ts
+
+
+After compiling, a new file is created:
+
+tasks.js
+
+✅ STEP 4: Run JavaScript file with Node.js
+
+Run:
+
+node tasks.js
+
+  
