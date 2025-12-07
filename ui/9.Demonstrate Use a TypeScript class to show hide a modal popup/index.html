@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Modal</title>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .show {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="openBtn">Open Modal</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>This is a modal popup!</p>
+            <button id="closeBtn">Close</button>
+        </div>
+    </div>
+
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>

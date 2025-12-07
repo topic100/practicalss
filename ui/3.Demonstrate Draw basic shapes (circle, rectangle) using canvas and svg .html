@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Shapes</title>
+</head>
+<body>
+  <h2>Canvas: Circle and Rectangle</h2>
+  <canvas id="myCanvas" width="300" height="200" style="border:1px solid #000000;"></canvas>
+
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Draw rectangle
+    ctx.fillStyle = "skyblue";
+    ctx.fillRect(20, 20, 100, 50);  // x, y, width, height
+
+    // Draw circle
+    ctx.beginPath();
+    ctx.arc(200, 60, 30, 0, 2 * Math.PI);  // x, y, radius, startAngle, endAngle
+    ctx.fillStyle = "orange";
+    ctx.fill();
+    ctx.stroke();
+  </script>
+</body>
+</html>
+
+Using SVG :- SVG is XML-based and you define shapes declaratively.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SVG Shapes</title>
+</head>
+<body>
+  <h2>SVG: Circle and Rectangle</h2>
+  <svg width="300" height="200" style="border:1px solid #000000;">
+    <!-- Rectangle -->
+    <rect x="20" y="20" width="100" height="50" fill="skyblue" />
+
+    <!-- Circle -->
+    <circle cx="200" cy="60" r="30" fill="orange" stroke="black" />
+  </svg>
+</body>
+</html>

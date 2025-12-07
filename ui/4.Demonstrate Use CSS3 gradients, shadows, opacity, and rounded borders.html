@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS3 Styling Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 30px;
+    }
+
+    .box {
+      width: 250px;
+      height: 150px;
+      margin: 20px;
+      padding: 20px;
+      color: white;
+      font-size: 1.2em;
+      text-align: center;
+      line-height: 110px;
+      transition: all 0.3s ease-in-out;
+    }
+
+
+    .gradient {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+    }
+
+    .shadow {
+      background-color: #ff6a00;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .opacity {
+      background-color: #6a11cb;
+      opacity: 0.7;
+    }
+
+    .rounded {
+      background: radial-gradient(circle, #43e97b, #38f9d7);
+      border-radius: 20px;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+
+
+<body>
+
+  <h2>CSS3 Styling Examples</h2>
+
+  <div class="box gradient">Gradient Background</div>
+  <div class="box shadow">Box Shadow</div>
+  <div class="box opacity">Semi-Transparent</div>
+  <div class="box rounded">Rounded Border</div>
+
+</body>
+</html>
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Toggle</title>
+    <style>
+        :root {
+            --bg-color-light: #ffffff;
+            --text-color-light: #000000;
+            --bg-color-dark: #121212;
+            --text-color-dark: #ffffff;
+        }
+
+        body[data-theme="light"] {
+            background-color: var(--bg-color-light);
+            color: var(--text-color-light);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        body[data-theme="dark"] {
+            background-color: var(--bg-color-dark);
+            color: var(--text-color-dark);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        #theme-toggle {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Theme Toggle Example</h1>
+    <button id="theme-toggle">Toggle Theme</button>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
